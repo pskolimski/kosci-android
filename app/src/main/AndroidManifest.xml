@@ -24,10 +24,16 @@
         <activity
             android:name=".ResultActivity"
             android:exported="true">
+
         </activity>
         <activity
             android:name=".GameActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.GAME" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".RegisterActivity"

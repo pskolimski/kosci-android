@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KOSCI"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/diceImage1"
+            android:src="@drawable/question"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            />
+        <ImageView
+            android:id="@+id/diceImage2"
+            android:src="@drawable/question"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            />
+        <ImageView
+            android:id="@+id/diceImage3"
+            android:src="@drawable/question"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            />
+        <ImageView
+            android:id="@+id/diceImage4"
+            android:src="@drawable/question"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            />
+        <ImageView
+            android:id="@+id/diceImage5"
+            android:src="@drawable/question"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/randomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Losuj"
+        />
+
+    <TextView
+        android:id="@+id/points"
+        android:text="Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
